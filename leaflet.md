@@ -6,9 +6,9 @@ This documents aims at gathering information worth knowing about some inner work
 
 ### GtK #1 – Leaflet generalizes for you
 #### What’s the issue?
-When overlapping geometries from a WMS and the same ones from geojson (or other vector formats), there is a slight mismatch.
+When requesting the same geometries from a WMS and from geojson file (or other vector formats), there is a slight mismatch at the border.
 #### Why is it so?
-Leaflet applies some generalization to your vector data by default. The smoothFactor parameter is set by default to 1.
+Leaflet applies some generalization to your vector data. The smoothFactor parameter is set by default to 1.
 #### How to solve it?or not…
 Set the smoothFactor to 0.
 ```javascript
@@ -19,7 +19,7 @@ function style(feature) {
   color: '#000',
   fillOpacity: 0.5,
   fillColor: "#000",
-  smoothFactor:1
+  smoothFactor:0
   }
 ;}
 ```
