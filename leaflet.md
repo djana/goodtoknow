@@ -54,7 +54,7 @@ They get cut at the border of the pseudo tiles that Leaflet is using.
 A plugin is under development for version 0.8.
 see https://github.com/heigeo/leaflet.wms
 
-### GtK ## – Tempalte question
+### GtK ## – Template question
 ##### What’s the issue?
 ##### Why is it so?
 ##### How to solve it?
