@@ -4,6 +4,13 @@
 ### Goal
 This documents aims at gathering information worth knowing about some inner workings of the Leaflet Web mapping framework. As of writing, Leaflet is at version 0.7.
 
+### Table of Content
+1. [Leaflet generalizes for you](https://github.com/djana/goodtoknow/blob/master/leaflet.md#gtk-1--leaflet-generalizes-for-you)
+2. [Use of a WMS in another projection system](https://github.com/djana/goodtoknow/blob/master/leaflet.md#gtk-2---use-of-a-wms-in-another-projection-system)
+3. [Synchronization view](https://github.com/djana/goodtoknow/blob/master/leaflet.md#gtk-3--synchronization-view)
+4. [Z-Index](https://github.com/djana/goodtoknow/blob/master/leaflet.md#gtk-4--z-index)
+5. [Labels issue when using WMS](https://github.com/djana/goodtoknow/blob/master/leaflet.md#gtk-5--labels-issue-when-using-wms)
+***
 ### GtK #1 – Leaflet generalizes for you
 ##### What’s the issue?
 When requesting the same geometries from a WMS and from geojson file (or other vector formats), there is a slight mismatch at the border.
@@ -23,7 +30,7 @@ function style(feature) {
   }
 ;}
 ```
-
+***
 ### GtK #2 –  Use of a WMS in another projection system
 ##### What’s the issue?
 ##### Why is it so?
@@ -31,12 +38,12 @@ function style(feature) {
 ##### A few hints
 Define the same number of scales or resolutions as you have of zoom levels.
 L.Transformation allows you to transform the projected coordinates to pixel coordinates; default is L.Transformation(1, 0, -1, 0)
-
+***
 ### GtK #3 – Synchronization view
 ##### What’s the issue?
 ##### Why is it so?
 ##### How to solve it?
-
+***
 ### GtK #4 – Z-Index
 ##### What’s the issue?
 Dealing with the z-index and different types of layers does not always lead to the expected results.
@@ -45,7 +52,7 @@ different type of layers belongs to different Pane and thus their position are f
 ##### How to solve it?
 Leaflet now supports setting the zIndex for TileLayer
 layer.setZIndex(zIndex)
-
+***
 ### GtK #5 – Labels issue when using WMS
 ##### What’s the issue?
 They get cut at the border of the pseudo tiles that Leaflet is using.
@@ -53,8 +60,9 @@ They get cut at the border of the pseudo tiles that Leaflet is using.
 ##### How to solve it?
 A plugin is under development for version 0.8.
 see https://github.com/heigeo/leaflet.wms
-
+***
 ### GtK ## – Template question
 ##### What’s the issue?
 ##### Why is it so?
 ##### How to solve it?
+***
