@@ -14,7 +14,7 @@ This documents aims at gathering information worth knowing about some inner work
 ***
 ### GtK #1 – Leaflet generalizes for you
 ##### What’s the issue?
-When requesting the same geometries from a WMS and from geojson file (or other vector formats), there is a slight mismatch at the border.
+When requesting the same geometries from a WMS and from geojson file (or other vector formats), there is a slight mismatch at the border. Example [here](http://jsfiddle.net/j21kh7ao/)
 ##### Why is it so?
 Leaflet applies some generalization to your vector data. The smoothFactor parameter is set by default to 1.
 ##### How to solve it?
@@ -34,6 +34,8 @@ function style(feature) {
 ***
 ### GtK #2 –  Use of a WMS in another projection system
 ##### What’s the issue?
+Incorrect BBOX for the WMS Request. See an example here: http://jsfiddle.net/3zda53ug/  
+Not sure if this is not also a QGIS Server issue?
 ##### Why is it so?
 ##### How to solve it?
 ##### A few hints
@@ -42,6 +44,7 @@ L.Transformation allows you to transform the projected coordinates to pixel coor
 ***
 ### GtK #3 – Synchronization view
 ##### What’s the issue?
+syncView Plugin does not work when setting the maxBounds. See the issue here: https://github.com/turban/Leaflet.Sync/issues/21
 ##### Why is it so?
 ##### How to solve it?
 ***
