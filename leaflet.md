@@ -65,6 +65,14 @@ They get cut at the border of the pseudo tiles that Leaflet is using.
 A plugin is under development for version 0.8.
 see https://github.com/heigeo/leaflet.wms
 ***
+### GtK #6 – Marker Cluster Plugin
+##### What’s the issue?
+The point data would show up, but the clustering would not work.
+##### Why is it so?
+If the geometries are multigeometries, the plugin assume it the group of markers is a single object and thus, does not apply a clustering effect.
+##### How to solve it?
+Use only single geometries
+***
 ### GtK ## – Template question
 ##### What’s the issue?
 ##### Why is it so?
