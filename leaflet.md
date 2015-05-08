@@ -10,6 +10,7 @@ This documents aims at gathering information worth knowing about some inner work
 3. [Synchronization view](https://github.com/djana/goodtoknow/blob/master/leaflet.md#gtk-3--synchronization-view)
 4. [Z-Index](https://github.com/djana/goodtoknow/blob/master/leaflet.md#gtk-4--z-index)
 5. [Labels issue when using WMS](https://github.com/djana/goodtoknow/blob/master/leaflet.md#gtk-5--labels-issue-when-using-wms)
+6. [Marker Cluster Plugin](https://github.com/djana/goodtoknow/blob/master/leaflet.md#gtk-6--marker-cluster-plugin)
 
 ***
 ### GtK #1 – Leaflet generalizes for you
