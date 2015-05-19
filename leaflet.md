@@ -74,6 +74,14 @@ If the geometries are multigeometries, the plugin assume it the group of markers
 ##### How to solve it?
 Use only single geometries
 ***
+### GtK 7 – Popup for polygons
+##### What’s the issue?
+The bind.Popup does not seem to work on Polygons.
+##### Why is it so?
+It could be that multigeometries are the problem because Leaflet cannot decide where to open the popup.
+##### How to solve it?
+Change to single geometries.
+***
 ### GtK ## – Template question
 ##### What’s the issue?
 ##### Why is it so?
